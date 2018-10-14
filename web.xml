@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+           version="4.0">
+
+
+    <servlet>
+        <servlet-name>showNameandFamily</servlet-name>
+        <servlet-class>Controller.showNameandFamily</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showNameandFamily</servlet-name>
+        <url-pattern>/showName/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cookieNFS</servlet-name>
+        <servlet-class>Controller.cookieNFScontroller</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cookieNFS</servlet-name>
+        <url-pattern>/saveCookie/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>showcookienfs</servlet-name>
+        <servlet-class>Controller.ShowCookie</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showcookienfs</servlet-name>
+        <url-pattern>/showCookie/</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
